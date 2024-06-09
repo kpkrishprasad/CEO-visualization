@@ -4,7 +4,7 @@
   //asd
   let ceoData = [];
   onMount(async () => {
-    const response = await fetch('/Titan-regression-vis/ceo_data_b.json');
+    const response = await fetch('/CEO-visualization/ceo_data_b.json');
     ceoData = await response.json();
 
     const industries = Array.from(new Set(ceoData.map(d => d.Industry)));

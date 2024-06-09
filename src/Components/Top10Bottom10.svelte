@@ -9,7 +9,7 @@
 
     onMount(async () => {
         try {
-            const response = await fetch('/Titan-regression-vis/ceo_data_b.json');
+            const response = await fetch('/CEO-visualization/ceo_data_b.json');
             data = await response.json();
 
             data.sort((a, b) => b.payRatio - a.payRatio);

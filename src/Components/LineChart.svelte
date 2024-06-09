@@ -24,7 +24,7 @@
     .range([height, 0]);
 
   onMount(async () => {
-    const response = await fetch('/Titan-regression-vis/ceo_data_b.json');
+    const response = await fetch('/CEO-visualization/ceo_data_b.json');
     const ceoData = await response.json();
     
     // Group data by industry
